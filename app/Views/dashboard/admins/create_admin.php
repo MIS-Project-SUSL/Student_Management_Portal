@@ -1,13 +1,13 @@
 <?= view('dashboard/vertical_navigation') ?>
 
 
-<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+<main class="main-content px-3 px-md-4">
     <div
         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Registration Form</h1>
+        <h1 class="h2">Administrator Registration Form</h1>
 
     </div>
-    <form action="<?= base_url('dashboard/admins/store_admin') ?>" method="post">
+    <form action="<?= base_url('admins/store') ?>" method="post">
         <?= csrf_field() ?>
         <!-- CSRF protection -->
 
@@ -16,15 +16,7 @@
             <input type="text" class="form-control" name="name" value="<?= old('name') ?>">
         </div>
 
-        <!-- <div class="form-group mb-3">
-            <select name="department" class="form-select">
-                <option value="" disabled selected>Select Department</option>
-                <option value="Computing and Information Systems">Computing and Information Systems
-                </option>
-                <option value="Sofware Engineering">Software Engineering</option>
-                <option value="Data Science">Data Science</option>
-            </select>
-        </div> -->
+
 
         <div class="form-group mb-3">
             <label for="email">Email:</label>
@@ -43,7 +35,15 @@
 
         <div class="form-group mb-3">
             <label for="access_level">Access Level:</label>
-            <input type="text" class="form-control" name="access_level" value="<?= old('access_level') ?>">
+            <select name="access_level" class="form-select">
+                <option value="" disabled selected>Select Access Level</option>
+                <option value="1">
+                    1 (Super Admin)
+                </option>
+                <option value="2">
+                    2 (Admin)
+                </option>
+            </select>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
