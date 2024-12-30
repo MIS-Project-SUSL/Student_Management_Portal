@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="public\assests\Logo.png" sizes="32x32" type="image/png">
+    <title>Register</title>
 </head>
 
 <body class="d-flex flex-column h-100 text-center bg-light">
@@ -65,6 +65,29 @@
                     </option>
                 </select>
                 <span class="text-danger"><?= display_error($validation, 'department') ?></span>
+
+            </div>
+
+            <div class="form-group mb-3">
+                <select name="batch" class="form-select">
+                    <option value="" disabled selected>Select Department</option>
+                    <option value="2018-2019">
+                        2018-2019
+                    </option>
+                    <option value="2019-2020">
+                        2019-2020
+                    </option>
+                    <option value="2020-2021">
+                        2020-2021
+                    </option>
+                    <option value="2021-2022">
+                        2021-2022
+                    </option>
+                    <option value="2022-2023">
+                        2022-2023
+                    </option>
+                </select>
+                <span class="text-danger"><?= display_error($validation, 'batch') ?></span>
 
             </div>
 
