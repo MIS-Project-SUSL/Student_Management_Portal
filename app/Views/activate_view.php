@@ -8,19 +8,26 @@
     <title>Account Activation</title>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1>Account Activation Process</h1>
+    
+    
+    <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+    
+    
+        <h3 class="mb-5">Account Activation Process</h3>
         
         <?php if(isset($error)): ?>
             <div class="alert alert-danger"><?= esc($error); ?></div>
             <?php elseif(isset($success)): ?>
                 <div class="alert alert-success"><?= esc($success); ?></div>
         <?php endif; ?>
-    </div>
-    <div>
-    <a href="<?= base_url('login') ?>" class="d-block mb-2">Sign In</a>
+    
 
+        <?= form_open(); ?>
+        <a href="<?= base_url('login') ?>" class="btn btn-primary btn-lg w-100 mb-3">Sign In</a>
+        <?= form_close(); ?>
+    
     </div>
+    
 </body>
 </html>
 
