@@ -42,13 +42,17 @@ class Register extends Controller
                 'rules' => 'required',
                 'errors' => ['required' => 'Please select a department']
             ],
+            'department' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'Please select a batch']
+            ],
             'email' => [
-                'rules' => 'required|valid_email|is_unique[user.email]',
+                'rules' => 'required|valid_email|is_unique[user.email]|regex_match[/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.sab\.ac\.lk$/]',
                 'errors' => [
                     'required' => 'Email is required',
                     'valid_email' => 'Please enter a valid email address',
                     'is_unique' => 'Email is already registered',
-                    // 'regex_match' => 'Please enter a valid university email address'
+                    'regex_match' => 'Please enter a valid university email address'
                 ]
             ],
             'username' => [

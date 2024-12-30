@@ -48,7 +48,7 @@ class Admins extends Controller
 
         if (!$this->validate([
             'name'   => 'required',
-            'email' => 'required',
+            'email'  => 'required|valid_email|is_unique[admin.email]|regex_match[/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.sab\.ac\.lk$/]',
             'telephone'   => 'required',
             'password'=>'required',
             'access_level' => 'required'

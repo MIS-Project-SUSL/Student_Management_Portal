@@ -14,9 +14,7 @@
                 </div>
                 </form>
             </div>
-            <div>
-                <a class="btn btn-success" href="<?= base_url('users/create') ?>">Add New Student</a>
-            </div>
+            
         </div>
 
         <div class="table-responsive">

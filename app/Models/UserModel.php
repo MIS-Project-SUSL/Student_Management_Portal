@@ -8,7 +8,7 @@ class UserModel extends Model
 {
     protected $table = 'user';
     protected $primaryKey = 'uid';
-    protected $allowedFields = ['name', 'email', 'username', 'department', 'password', 'confirmPassword', 'profileImage', 'created_on', 'updated_on'];
+    protected $allowedFields = ['name', 'email', 'username', 'department', 'batch', 'password', 'confirmPassword', 'profileImage', 'created_on', 'updated_on'];
 
       // Search function to find users based on a query
       public function searchUser($query)
