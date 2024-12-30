@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:8111
--- Generation Time: Dec 29, 2024 at 08:28 PM
+-- Generation Time: Dec 30, 2024 at 03:23 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -363,8 +363,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`uid`, `name`, `email`, `username`, `department`, `batch`, `profileImage`, `password`, `status`, `uniid`, `created_on`, `activation_date`, `updated_on`) VALUES
-(46, 'HWC Dilka', 'hwcdilka@std.appsc.sab.ac.lk', '19APC4055', 'Computing and Information Systems', '2019/2020', NULL, '12345678', 'innactive', '', '2024-12-18 14:08:15', '0000-00-00 00:00:00', '2024-12-19 05:53:37'),
-(47, 'HWC Dilka', 'hwcdilka@std.appsc.sab.ac.lk', '19APC4055', 'Sofware Engineering', '2019/2020', NULL, '12345678', 'innactive', '', '2024-12-18 14:20:02', '0000-00-00 00:00:00', '2024-12-19 05:53:50');
+(48, 'Chamaali Dilka', 'chamalidilkapmnt1998@gmail.com', '19APC4054', 'Data Science', NULL, NULL, '$2y$10$3j/7yWSqQ4XcYONQWvAnvuRx7W40HFQe21MXURT.eCgy.iDZ/UoL6', 'active', 'f83f4f4f862de525452da76e80c2f223', '2024-12-30 14:10:59', '2024-12-30 14:10:59', '2024-12-30 14:12:40');
 
 --
 -- Indexes for dumped tables
@@ -492,7 +491,7 @@ ALTER TABLE `syllabus`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `uid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `uid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- Constraints for dumped tables
