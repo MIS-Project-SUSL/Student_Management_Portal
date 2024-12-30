@@ -39,7 +39,7 @@
             <?= form_open(); ?>
             <?= csrf_field(); ?>
             <div class="text-center mb-4">
-                <img src="public\assests\Logo.png" alt="Logo" width="90" height="90">
+                <img src="public\uploads\profiles\default-profile.png" alt="Logo" width="90" height="90">
             </div>
 
             <h2 class="mb-3 fw-bold" style="color:#0f3d6b ">Register</h2>

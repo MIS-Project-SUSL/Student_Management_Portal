@@ -47,7 +47,7 @@
 
 
         <div class="mb-4 text-center">
-                    <img src="public/assests/Logo.png" alt="Logo" width="150" height="150">
+                    <img src="public\uploads\profiles\default-profile.png" alt="Logo" width="150" height="150">
                 </div>
                 
                 <h2 class="mb-3 fw-bold" style="color:#0f3d6b ">Sign In</h2>

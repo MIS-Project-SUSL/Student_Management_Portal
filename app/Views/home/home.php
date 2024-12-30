@@ -39,20 +39,20 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <img src="public/assests/Logo.png" alt="Logo" width="60" height="60" class="rounded-circle">
+            <img src="public\uploads\profiles\default-profile.png" alt="Logo" width="60" height="60" class="rounded-circle">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('home') ?>">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Grades</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="<?= esc($user['profileImage']) ?>" 
+                        <a class="nav-link" href="<?= base_url('profile') ?>"><img src="<?= esc($user['profileImage']) ?>" 
                              alt="Profile Picture" 
-                             class="rounded-circle" width="auto" height="60"></a>
+                             class="rounded-circle" width="35" height="40"></a>
                     </li>
                 </ul>
             </div>
@@ -121,7 +121,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer text-center py-4 ">
+    <footer class="footer text-center py-5 ">
         <div class="container text-light">
             <p class="mb-0">&copy; 2024 Student Management Portal. All rights reserved.</p>
             <a class="text-light" href="#">Privacy Policy</a> | <a href="#" class="text-light">Contact Us</a> | <a href="#" class="text-light">Help</a>

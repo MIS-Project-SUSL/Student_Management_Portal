@@ -154,6 +154,9 @@
         $isUsersActive = strpos($currentUrl, base_url('users')) === 0;
         $isCoursesActive = strpos($currentUrl, base_url('courses')) === 0;
         $isAdminsActive = strpos($currentUrl, base_url('admins')) === 0;
+        $isAnalyticsActive = strpos($currentUrl, base_url('enrollment')) === 0 || 
+                         strpos($currentUrl, base_url('attendance')) === 0 || 
+                         strpos($currentUrl, base_url('result')) === 0;
     ?>
 
     <button class="menu-toggle  ">
@@ -190,8 +193,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-2 <?= current_url() === base_url('reports') ? 'active' : '' ?>"
-                       href="<?= base_url('reports') ?>">
+                    <a class="nav-link d-flex align-items-center gap-2 <?= $isAnalyticsActive ? 'active' : '' ?>"
+                    href="<?= base_url('enrollment') ?>">
                         <i class="bi bi-graph-up"></i> Reports and Analytics
                     </a>
                 </li>
